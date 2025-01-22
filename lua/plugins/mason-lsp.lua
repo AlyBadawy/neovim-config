@@ -6,6 +6,7 @@ return {
   },
   config = function()
     require("mason-lspconfig").setup({
+      auto_install = true,
       ensure_installed = {
         "lua_ls",
         "clangd",
