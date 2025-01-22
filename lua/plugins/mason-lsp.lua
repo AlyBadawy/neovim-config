@@ -24,9 +24,8 @@ return {
         "ruby_lsp",
         "sqlls",
         "tsp_server",
-        "yamlls"
-      }
+        "yamlls",
+      },
     })
-  end
+  end,
 }
-

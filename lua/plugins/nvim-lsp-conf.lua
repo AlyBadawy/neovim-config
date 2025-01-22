@@ -3,22 +3,22 @@ return {
   opts = { ui = { border = "rounded" } },
   lazy = false,
   config = function()
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     local lspconfig = require("lspconfig")
     lspconfig.ts_ls.setup({
-      capabilities = capabilities
+      capabilities = capabilities,
     })
     lspconfig.html.setup({
-      capabilities = capabilities
+      capabilities = capabilities,
     })
     lspconfig.lua_ls.setup({
-      capabilities = capabilities
+      capabilities = capabilities,
     })
 
     vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
     vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
     vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-  end
+  end,
 }
