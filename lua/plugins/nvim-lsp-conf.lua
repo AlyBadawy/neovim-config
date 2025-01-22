@@ -1,5 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
+  opts = { ui = { border = "rounded" } },
   lazy = false,
   config = function()
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
