@@ -25,6 +25,9 @@ return {
         "sqlls",
         "tsp_server",
         "yamlls",
+        "eslint_d",
+        "black",
+        "isort"
       },
     })
   end,
